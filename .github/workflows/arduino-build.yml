@@ -16,8 +16,8 @@ jobs:
       uses: arduino/compile-sketches@v1
       with:
         fqbn: arduino:avr:uno
-        sketch-paths: |
-          ./sketch
+        enable-deltas-report: true
+        cli-compile-flags: --output-dir ./build
         
     - name: Upload compiled binary as Artifact
       uses: actions/upload-artifact@v4
