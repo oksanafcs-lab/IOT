@@ -19,12 +19,10 @@ jobs:
         sketch-paths: |
           ./sketch
         enable-deltas-report: false
-        cli-compile-flags: |
-          --output-dir=./sketch/build
+        sketch-with-build-metadata: true
         
     - name: Upload compiled binary as Artifact
       uses: actions/upload-artifact@v4
       with:
         name: arduino-uno-binary
-        # Вказуємо шлях до зкомпільованого .hex файлу (та інших бінарників)
         path: ./sketch/build/
