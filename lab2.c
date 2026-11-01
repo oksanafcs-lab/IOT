@@ -1,7 +1,7 @@
 // C++ code
 int buttonPin = 7;//UPD in new-branch
-int pins[] = {13, 12, 11};
-int counter;
+int pins[] = {13, 12, 11};//UPD in develop2
+int counter;//test ruleset
 //debouncing for button
 int lastSteadyState = HIGH; // The previous steady state from the input pin
 int lastFlickerableState = HIGH; // The previous temporary state from the input pin
