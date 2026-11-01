@@ -17,7 +17,7 @@ jobs:
       with:
         fqbn: arduino:avr:uno
         sketch-paths: |
-          .
+          ./sketch
         enable-deltas-report: false
         cli-compile-flags: --output-dir ./build
         
