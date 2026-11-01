@@ -1,5 +1,5 @@
 // C++ code
-int buttonPin = 7;
+int buttonPin = 7;//UPD in new-branch
 int pins[] = {13, 12, 11};
 int counter;
 //debouncing for button
