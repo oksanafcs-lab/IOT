@@ -18,3 +18,10 @@ jobs:
         fqbn: arduino:avr:uno
         sketch-paths: |
           ./sketch
+        
+    - name: Upload compiled binary as Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: arduino-uno-binary
+        # Вказуємо шлях до зкомпільованого .hex файлу (та інших бінарників)
+        path: ./build/
