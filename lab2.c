@@ -1,6 +1,6 @@
 // C++ code
 int buttonPin = 7;//UPD in new-branch
-int pins[] = {13, 12, 11};
+int pins[] = {13, 12, 11};//UPD in develop2
 int counter;
 //debouncing for button
 int lastSteadyState = HIGH; // The previous steady state from the input pin
