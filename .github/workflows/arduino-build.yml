@@ -1,0 +1,22 @@
+name: arduino build check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Install Arduino CLI
+      uses: arduino/compile-sketches@v1
+    - name: Compile sketch for Arduino UNO
+      uses: arduino/compile-sketches@v1
+      with:
+        fqbn: arduino:avr:uno
+        sketch-paths: |
+          ./src
