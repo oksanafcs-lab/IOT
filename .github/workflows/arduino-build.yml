@@ -2,11 +2,7 @@ name: arduino build check
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-
-  workflow_dispatch:   
 
 jobs:
   build:
@@ -15,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v7
+      uses: actions/checkout@v4
     - name: Install Arduino CLI
       uses: arduino/compile-sketches@v1
     - name: Compile sketch for Arduino UNO
